@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import dto.itemList;
 
-public class Access {
+public class Access { 
 	public ArrayList<itemList> getList(Connection con) throws SQLException{
 		ArrayList<itemList> itemlist = new ArrayList<itemList>();
 		PreparedStatement st = con.prepareStatement("select * from item");
